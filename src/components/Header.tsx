@@ -12,7 +12,7 @@ export function Header() {
           <a href="#">Início</a>
         </li>
         <li>
-          <a href="">Séries</a>
+          <a href="#">Séries</a>
         </li>
         <li>
           <a href="#">Filmes</a>
