@@ -9,7 +9,7 @@ export function Header() {
       <img src={Logo} alt="Artflix logo" />
       <ul className='menu-list'>
         <li>
-          <a href="">Início</a>
+          <a href="#">Início</a>
         </li>
         <li>
           <a href="">Séries</a>
