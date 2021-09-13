@@ -1,12 +1,23 @@
 .header {
-    padding: 50px 50px 30px 50px;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.69) 0%,
-      rgba(0, 0, 0, 0) 100%
-    );
-  
-    > img {
-      height: 62px;
-    }
+  padding: 50px 50px 30px 50px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.69) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  img {
+    height: 62px;
+  }
+
+  .menu-list{
+    display: flex;
+    list-style: none;
+  }
+
+  .menu-list li{
+    margin-left: 25px;
+  }
 }
