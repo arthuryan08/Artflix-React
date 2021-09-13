@@ -32,6 +32,16 @@ export function Home() {
           </div>
         </div>
       </div>
+      <div className="main-content">
+        <section>
+          <div className='container'>
+            <h1>Populares da Netflix</h1>
+            <div className='content'>
+              
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
