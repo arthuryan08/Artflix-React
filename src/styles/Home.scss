@@ -1,0 +1,68 @@
+.hero-capa {
+  height: 700px;
+  background-image: url(../assets/images/capa-filme.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-infos {
+  color: #fff;
+  margin-left: 100px;
+  width: 550px;
+  position: absolute;
+  margin-top: 150px;
+
+  > img {
+    width: 500px;
+    margin: 20px 0;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  .btn {
+    display: flex;
+
+    button {
+      margin: 35px 0 0 0;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      align-items: center;
+      display: flex;
+      margin-right: 5px;
+      cursor: pointer;
+
+      svg{
+        margin-right: 5px;
+      }
+    }
+
+    button:hover{
+    filter: brightness(0.9);
+    }
+
+    .btn-info{
+      color: #fff;
+      background-color: rgba(77, 77, 77, 0.6);
+    }
+  }
+}
+.top1 {
+  display: flex;
+  margin: 25px 0;
+  align-items: center;
+
+  h1 {
+    margin-left: 10px;
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  img {
+    height: 40px;
+  }
+}

@@ -7,17 +7,26 @@
     rgba(0, 0, 0, 0.69) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+  position: absolute;
+  width: 100%;
+  top: 0;
+  
 
   img {
     height: 62px;
+    margin-right: 20px;
   }
 
-  .menu-list{
+  .menu-list {
     display: flex;
     list-style: none;
   }
 
-  .menu-list li{
+  .menu-list li {
     margin-left: 25px;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
   }
 }
