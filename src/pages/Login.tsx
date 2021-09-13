@@ -1,16 +1,13 @@
 import React from "react";
-
-import Logo from "../assets/images/logo.png";
 import FacebookLogo from "../assets/images/facebook.png";
+import { Header } from "../components/Header";
 
 import "../styles/Login.scss";
 
 export function Login() {
   return (
     <div className="background">
-      <header className="header">
-        <img src={Logo} alt="Artflix logo" />
-      </header>
+      <Header />
       <div className="login-container">
         <h2>Entrar</h2>
         <form>
