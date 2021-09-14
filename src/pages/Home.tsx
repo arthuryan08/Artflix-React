@@ -1,9 +1,14 @@
 import React from "react";
 import { Header } from "../components/Header";
+import { BiPlay, BiInfoCircle, BiPlayCircle } from "react-icons/bi";
+import { AiFillPlayCircle, AiOutlinePlusCircle } from "react-icons/ai";
+import { HiThumbUp, HiThumbDown } from "react-icons/hi";
+
 import HeroTitle from "../assets/images/diabo-de-cada-dia.png";
 import Top10 from "../assets/images/badge-top-10.png";
+import Filme1 from "../assets/filmes/alive.jpg"
+
 import "../styles/Home.scss";
-import { BiPlay, BiInfoCircle } from "react-icons/bi";
 
 export function Home() {
   return (
@@ -37,7 +42,372 @@ export function Home() {
           <div className='container'>
             <h1>Populares da Netflix</h1>
             <div className='content'>
-              
+              <ul className='movie-list'>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+              </ul>
+              <ul className='movie-list'>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+              </ul>
+              <ul className='movie-list'>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+                <li className='movie'>
+                  <img src={Filme1} alt="Filme 1" />
+                  <div className='movie-info'>
+                    <div className='buttons'>
+                        <span>
+                          <a href="#"><AiFillPlayCircle /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbUp /></a>
+                        </span>
+                        <span>
+                          <a href="#"><HiThumbDown /></a>
+                        </span>
+                        <span>
+                          <a href="#"><AiOutlinePlusCircle /></a>
+                        </span>
+                    </div>
+                    <p>T2:EP6 <text>"Meu Episódio"</text></p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </section>

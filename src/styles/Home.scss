@@ -36,7 +36,7 @@
 
   .btn {
     display: flex;
-    
+
     button {
       margin: 35px 0 0 0;
       padding: 14px 20px;
@@ -63,6 +63,7 @@
     }
   }
 }
+
 .top1 {
   display: flex;
   margin: 25px 0;
@@ -80,7 +81,7 @@
 }
 
 .main-content{
-  margin-left: 100px;
+  margin-left: 40px;
   color: #fff;
 }
 
@@ -88,5 +89,78 @@
   h1{
     font-size: 20px;
     font-weight: 500;
+    margin-left: 60px;
   }
+}
+
+.movie-list{
+  scroll-behavior: smooth;
+  display: flex;
+  padding: 20px 0;
+  height: 350px;
+
+  .movie{
+    list-style: none;
+    margin: 0px 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    display: inline-table;
+
+    img{
+      height: 150px;
+      display: flex;
+    }
+    
+
+    .movie-info {
+      padding: 20px 15px 10px;
+      background-color: #171717;
+      transform: scale(0);
+      border-radius: 3px;
+
+      p{
+        color: #7E7B7B;
+        margin: 10px 0 0;
+        text{
+          color: #fff;
+        }
+      }
+
+      div span a{
+      font-size: 40px;
+      margin-right: 10px;
+      color: #fff;
+      }
+    }
+  }
+
+  .movie:first-child {
+    margin-left: 40px;
+  }
+}
+
+.movie:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  z-index: 9999;
+  transition: 0.5s;
+  
+}
+.movie:hover .movie-info{
+  transform: scale(1);
+  z-index: 9999;
+}
+
+.movie-list::-webkit-scrollbar{
+  height: 10px;
+}
+
+.movie-list::-webkit-scrollbar-track{
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.movie-list::-webkit-scrollbar-thumb{
+  background-color: #7E7B7B;
+  border-radius: 20px;
 }
