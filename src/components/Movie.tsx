@@ -1,11 +1,21 @@
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
+import { ReactNode } from "react-dom/node_modules/@types/react";
 import { AiFillPlayCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { HiThumbUp, HiThumbDown } from "react-icons/hi";
 import Filme1 from "../assets/filmes/alive.jpg";
+import { Modal } from "./Modal";
 
-export function Movie() {
+type MovieTypes = {
+  handleShowModal: () => void;
+  showModal: Boolean;
+}
+
+export function Movie({ handleShowModal, showModal } : MovieTypes) {
   return (
-    <li className="movie">
+  <>
+  {showModal ? <Modal/> : null}
+  
+    <li onClick={handleShowModal} className="movie">
       <img src={Filme1} alt="Filme 1" />
       <div className="movie-info">
         <div className="buttons">
@@ -35,5 +45,6 @@ export function Movie() {
         </p>
       </div>
     </li>
+    </>
   );
 }
