@@ -5,6 +5,7 @@ import Top10 from "../assets/images/badge-top-10.png";
 import "../styles/Hero.scss";
 
 export function Hero() {
+
   return (
     <div className="hero-capa">
       <div className="hero-infos">

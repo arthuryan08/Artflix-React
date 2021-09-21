@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import HeroCapa from "../assets/images/capa-filme.png";
 import HeroNome from "../assets/images/diabo-de-cada-dia.png";
-import { AiFillPlayCircle } from "react-icons/ai";
+import { AiFillPlayCircle, AiOutlineClose } from "react-icons/ai";
 import { HiThumbUp, HiThumbDown } from "react-icons/hi";
 import "../styles/Modal.scss";
 import { BiPlay } from "react-icons/bi";
+type ModalTypes = {
+  handleShowModal: () => void;
+  movies: Array<{}>;
+};
 
-export function Modal() {
+export function Modal({ handleShowModal , movies }: ModalTypes) {
+  const modalRef = useRef<HTMLDivElement | null>(null);
+
+  function closeModal(e: React.MouseEvent<HTMLElement>) {
+    if (modalRef.current === e.target) {
+      handleShowModal();
+    }
+  }
+
   return (
-    <div className="modal">
+    <div ref={modalRef} onClick={closeModal} className="modal">
       <div className="modal-content">
         <div className="modal-hero">
+          <button className="close-button">
+            <AiOutlineClose onClick={handleShowModal} />
+          </button>
           <img src={HeroNome} alt="nome" />
           <div className="btn-hero">
             <button>
@@ -75,7 +90,8 @@ export function Modal() {
                   <h3>Título primeiro</h3>
                   <span>45min</span>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore quae nihil eum odio laborum!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Provident inventore quae nihil eum odio laborum!
                   </p>
                 </div>
               </li>
@@ -86,7 +102,8 @@ export function Modal() {
                   <h3>Título primeiro</h3>
                   <span>45min</span>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore quae nihil eum odio laborum!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Provident inventore quae nihil eum odio laborum!
                   </p>
                 </div>
               </li>
@@ -97,7 +114,8 @@ export function Modal() {
                   <h3>Título primeiro</h3>
                   <span>45min</span>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore quae nihil eum odio laborum!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Provident inventore quae nihil eum odio laborum!
                   </p>
                 </div>
               </li>
@@ -108,7 +126,8 @@ export function Modal() {
                   <h3>Título primeiro</h3>
                   <span>45min</span>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore quae nihil eum odio laborum!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Provident inventore quae nihil eum odio laborum!
                   </p>
                 </div>
               </li>
@@ -119,7 +138,8 @@ export function Modal() {
                   <h3>Título primeiro</h3>
                   <span>45min</span>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore quae nihil eum odio laborum!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Provident inventore quae nihil eum odio laborum!
                   </p>
                 </div>
               </li>

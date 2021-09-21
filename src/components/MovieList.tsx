@@ -1,15 +1,13 @@
-import { type } from "os";
-import React, { ReactNode, useState } from "react";
+import React from "react";
 import '../styles/MovieList.scss'
 import { Movie } from "./Movie";
 
-
-export function MovieList() {
-const [showModal, setShowModal] = useState(false)
-
-function handleShowModal(){
-  setShowModal(!showModal)
+type MovieListTypes = {
+  handleShowModal: () => void;
+  movies: Array<{}>;
 }
+
+export function MovieList({ handleShowModal , movies } : MovieListTypes) {
 
   return (
     <div className="main-content">
@@ -18,7 +16,8 @@ function handleShowModal(){
           <h1>Populares da Netflix</h1>
           <div className="content">
             <ul className="movie-list">
-              <Movie handleShowModal={handleShowModal} showModal={showModal}/>
+              {movies.map((movie) => (<Movie handleShowModal={handleShowModal} movie={movie}/>))
+              }
             </ul>
           </div>
         </div>

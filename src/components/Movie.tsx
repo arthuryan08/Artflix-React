@@ -1,22 +1,21 @@
-import React, { ButtonHTMLAttributes } from "react";
-import { ReactNode } from "react-dom/node_modules/@types/react";
+import React from "react";
 import { AiFillPlayCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { HiThumbUp, HiThumbDown } from "react-icons/hi";
 import Filme1 from "../assets/filmes/alive.jpg";
-import { Modal } from "./Modal";
 
 type MovieTypes = {
   handleShowModal: () => void;
-  showModal: Boolean;
-}
+  movie: any;
+};
 
-export function Movie({ handleShowModal, showModal } : MovieTypes) {
+
+export function Movie({ handleShowModal, movie } : MovieTypes) {
+
+  console.log(movie)
   return (
   <>
-  {showModal ? <Modal/> : null}
-  
     <li onClick={handleShowModal} className="movie">
-      <img src={Filme1} alt="Filme 1" />
+      <img src={movie.thumb} alt="Filme 1" />
       <div className="movie-info">
         <div className="buttons">
           <span>
@@ -41,7 +40,7 @@ export function Movie({ handleShowModal, showModal } : MovieTypes) {
           </span>
         </div>
         <p>
-          T2:EP6 <text>"Meu Episódio"</text>
+          T2:EP6 <span>"Meu Episódio"</span>
         </p>
       </div>
     </li>

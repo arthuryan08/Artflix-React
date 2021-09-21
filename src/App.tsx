@@ -1,14 +1,17 @@
 import React from 'react';
-import { Header } from './components/Header';
-import { Modal } from './components/Modal';
 import { Home } from './pages/Home';
 import { Login } from './pages/Login';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="App">
-     <Home />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={Login}/>
+        <Route path="/home" exact component={Home}/>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
