@@ -17,7 +17,7 @@ export function Movie({ handleShowModal, movie } : MovieTypes) {
       <img src={movie.thumb} alt="Filme 1" />
       <div className="movie-info">
         <div className="buttons">
-          <span>
+          <span className='play-button'>
             <a href="#">
               <AiFillPlayCircle />
             </a>

@@ -14,7 +14,7 @@ export function Home() {
       .then((response) => response.json())
       .then(setMovies);
   }, []);
-
+  
   function handleShowModal() {
     setShowModal(!showModal);
   }

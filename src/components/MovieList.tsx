@@ -18,7 +18,7 @@ export function MovieList({ handleShowModal, movies }: MovieListTypes ) {
 
   const handleRightClick = (e: React.MouseEvent<HTMLElement> ) => {
     e.preventDefault();
-    // carousel.current?.scrollLeft
+    // carousel.current?.scrollLeft += carousel.current.offsetWidth
   };
 
   return (

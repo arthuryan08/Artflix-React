@@ -86,11 +86,23 @@
         }
       }
 
+      div {
+        .play-button a{
+          color: #fff;
+        }
+      }
+
       div span a{
       font-size: 30px;
       margin-right: 10px;
-      color: #fff;
+      color: #7E7B7B;
       }
+      
+      div span a:hover{
+        font-size: 30px;
+        margin-right: 10px;
+        color: #FFF;
+        }
     }
   }
 
@@ -104,6 +116,7 @@
   transform: scale(1.2);
   z-index: 9;
   transition: 0.5s;
+  
   
 }
 .movie:hover .movie-info{
