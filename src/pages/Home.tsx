@@ -4,24 +4,31 @@ import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
 import { Modal } from "../components/Modal";
 import { MovieList } from "../components/MovieList";
-import api from '../services/api.json';
 
 export function Home() {
-  const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(false);
+  const [movies, setMovies] = useState([])
 
-  const movies = api
-  
-  function handleShowModal(){
-    setShowModal(!showModal)
+  useEffect(() => {
+    fetch("http://localhost:3000/movies.json")
+      .then((response) => response.json())
+      .then(setMovies);
+  }, []);
+
+  function handleShowModal() {
+    setShowModal(!showModal);
   }
-  
-  console.log(movies)
+
   return (
     <div>
-      {showModal ? <Modal handleShowModal={handleShowModal} movies={movies} /> : null}
+      {showModal ? (
+        <Modal handleShowModal={handleShowModal} movies={movies} />
+      ) : null}
       <Header />
       <Hero />
-      <MovieList handleShowModal={handleShowModal} movies={movies} />
+      {movies.slice(0, 4).map((movie) => (
+        <MovieList handleShowModal={handleShowModal} movies={movies} />
+      ))}
     </div>
   );
 }

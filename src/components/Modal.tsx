@@ -1,10 +1,13 @@
 import React, { useRef } from "react";
+
 import HeroCapa from "../assets/images/capa-filme.png";
 import HeroNome from "../assets/images/diabo-de-cada-dia.png";
+
 import { AiFillPlayCircle, AiOutlineClose } from "react-icons/ai";
 import { HiThumbUp, HiThumbDown } from "react-icons/hi";
-import "../styles/Modal.scss";
 import { BiPlay } from "react-icons/bi";
+import "../styles/Modal.scss";
+
 type ModalTypes = {
   handleShowModal: () => void;
   movies: Array<{}>;

@@ -11,7 +11,6 @@ type MovieTypes = {
 
 export function Movie({ handleShowModal, movie } : MovieTypes) {
 
-  console.log(movie)
   return (
   <>
     <li onClick={handleShowModal} className="movie">
@@ -40,7 +39,7 @@ export function Movie({ handleShowModal, movie } : MovieTypes) {
           </span>
         </div>
         <p>
-          T2:EP6 <span>"Meu Episódio"</span>
+          <span>{movie.titulo}</span>
         </p>
       </div>
     </li>
