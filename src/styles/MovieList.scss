@@ -20,6 +20,7 @@
   top: 9%;
   display: flex;
   justify-content: space-between;
+  z-index: 9999;
 
   .button-left, .button-right{
     button{

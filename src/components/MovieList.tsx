@@ -21,6 +21,7 @@ export function MovieList({ handleShowModal, movies }: MovieListTypes ) {
     // carousel.current?.scrollLeft += carousel.current.offsetWidth
   };
 
+  console.log(movies)
   return (
     <div className="main-content">
       <section>
