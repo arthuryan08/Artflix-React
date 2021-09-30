@@ -41,9 +41,7 @@ export function MovieList({ handleShowModal, movies }: MovieListTypes ) {
               </div>
             </div>
             <ul className="movie-list" >
-              {movies.map((movie) => (
-                <Movie handleShowModal={handleShowModal} movie={movie} />
-              ))}
+              {movies.map((movie) => <Movie handleShowModal={handleShowModal} movie={movie} />)}
             </ul>
           </div>
         </div>

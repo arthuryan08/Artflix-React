@@ -3,13 +3,13 @@ import { AiFillPlayCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { HiThumbUp, HiThumbDown } from "react-icons/hi";
 import Filme1 from "../assets/filmes/alive.jpg";
 
-type MovieTypes = {
+type MovieProps = {
   handleShowModal: () => void;
   movie: any;
 };
 
 
-export function Movie({ handleShowModal, movie } : MovieTypes) {
+export function Movie({ handleShowModal, movie } : MovieProps) {
 
   return (
   <>
